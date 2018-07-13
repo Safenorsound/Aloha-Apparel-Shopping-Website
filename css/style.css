@@ -1,17 +1,18 @@
 .aloha-logo {
-  height: 60px;
+  height: 50px;
   padding: 15px;
-  }
+}
 
 .shopping-cart {
-  height:60px;
+  height: 50px;
   padding: 15px;
 }
 
 .header {
-    display:flex;
-    justify-content: space-between;
-    text-align: center;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  font-family: Playfair Display;
 }
 
 a {
@@ -24,29 +25,26 @@ a:hover {
 }
 
 p {
-  font-family: 16px;
+  font-family: 14px, Raleway Light;
 }
 
 .nav {
   display: flex;
   list-style-type: none;
-  margin: 20px;
   justify-content: space-around;
   /* text-shadow: 3px,3px,3px; */
   max-width: 50%;
+  color: #e2574c;
+  text-decoration: none;
+  box-sizing: border-box;
   /* flex-direction: */
 }
 
 .banner {
-  /* color: white; */
   height: 280px;
-  /* font-size: 24px; */
-  /* letter-spacing: 2px; */
   padding: 50px;
   border: 10px;
   margin: 15px;
-  /* line-height: 1.5; */
-  /* text-align: center; */
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url("../images/banner-girl.png"), url("../images/flower-bkgd.jpg");
   background-size: cover, 150px;
@@ -54,30 +52,34 @@ p {
   background-position: center bottom, center;
   width: 100%;
   min-width: 600px;
-  /* position: relative; */
+  /* box-sizing: border-box; */
 }
 
 .banner-writing {
   color: #fff;
   text-align: center;
-  justify-content:center;
-  font-family: Playfair Display;
+  justify-content: center;
+  /* font-family: 14px; Playfair Display; */
   align-content: center;
   position: relative;
+  box-sizing: border-box;
 }
 
-.about {
-    color: #2d2d2d;
-    max-width: 100%;
-    height: 200px;
-    padding: 20px;
-    text-align: center;
+.new-collection [font-family: Playfair Display
+  font-size: 14px;] .about {
+  color: #2d2d2d;
+  max-width: 100%;
+  height: 200px;
+  padding: 20px;
+  text-align: center;
+  justify-content: center;
 
   /* height: 800px */
 }
 
-/* .hand-crafted-text {
-} */
+.h2 {
+  font-family: 24px;
+}
 
 .subscribe-button {
   padding: 10px;
@@ -85,10 +87,10 @@ p {
   border-radius: 12px;
   border: 1px;
   max-width: 600px;
-  margin:auto;
+  margin: auto;
 }
 
-.subscribe-button input (type:"email") {
+.subscribe-button input[type="email"] {
   width: 100%;
   position: absolute;
   right: 2px;
@@ -96,27 +98,32 @@ p {
 }
 
 .shop-section {
-
-  margin: 0 auto;
-  max-width: 1240px;
-  border: 10px;
-
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+  /* box-sizing:border-box; */
+  width: 100%;
+  /* border: 20px white; */
+  /* background-size: cover, cover; */
+  /* display: block; */
   /* .mens-catagory {
       background: src="/images/mens-category.jpg); */
-  }
+}
 
 .h1 {
   text-align: center;
 }
 
 .updates-section {
-  color:white;
+  color: white;
   display: flex;
   background-image: url(../images/wave-bkgd.jpg);
-  height: 300px;
+  /* height: 300px; */
   background-position: bottom;
-  justify-content: center;
-  align-items: center;
+  flex-basis: 100%;
+  width: 100%;
+
 }
 
 /* .Subscribe-Button {
@@ -125,14 +132,15 @@ p {
 .Featured {
   display: flex;
   flex-wrap: wrap;
-  margin: 10 auto;
+  margin: 10px auto;
   max-width: 1240px;
+  color: white;
 }
 
-.social-media ul{
-    list-style-type: none;
-    background:black;
-    color:white;
+.social-media ul {
+  list-style-type: none;
+  background: black;
+  color: white;
 }
 
 .Subscribe-Button {
@@ -148,116 +156,125 @@ p {
 }
 
 /* .container { */
-  /* display: flex;  */
-  /* or inline-flex */
+/* display: flex;  */
+/* or inline-flex */
 /* } */
 
-
+/* SHOP SECTION!!! */
 .mens-catagory {
-    display: flex;
-    background: url("../images/mens-category.jpg");
-    background-size:cover;
-    text-align: center;
-    width: 100%;
-    height: 175px;
-    align-items: center;
-    color: white;
-    max-width: 600px;
-    justify-content: center;
+  background: url("../images/mens-category.jpg");
+  background: linear-gradient(180deg);
+  width: 100%;
+  /* flex-basis: <height> | auto; */
+  height: 200px;
+  max-width: 600px;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
 }
 
 .trends-catagory {
-    display: flex;
-    background: url("../images/trends-category.jpg");
-    background-size:cover;
-    text-align: center;
-    width: 50%;
-    height: 175px;
-    align-items: center;
-    color: white;
-    justify-content: center;
+  display: flex;
+  background: url("../images/trends-category.jpg");
+  background-size: cover;
+  text-align: center;
+  width: 50%;
+  height: 200px;
+  align-items: center;
+  justify-content: center;
+  max-width: 300px;
 }
 
 .glasses-catagory {
-    display: flex;
-    background: url("../images/glasses-category.jpg");
-    background-size:cover;
-    text-align: center;
-    width: 50%;
-    height: 175px;
-    align-items: center;
-    color: white;
-    justify-content: center;
+  display: flex;
+  background: url("../images/glasses-category.jpg");
+  background-size: cover;
+  text-align: center;
+  width: 50%;
+  height: 200px;
+  align-items: center;
+  justify-content: center;
+  max-width: 300px;
 }
 
 .sale-catagory {
-    display: flex;
-    background: url("../images/sale-category.jpg");
-    background-size:cover;
-    text-align: center;
-    width: 50%;
-    height: 175px;
-    align-items: center;
-    color: #e2574c;
-    justify-content: center;
+  display: flex;
+  background: url("../images/sale-category.jpg");
+  background-size: cover;
+  text-align: center;
+  width: 50%;
+  height: 175px;
+  align-items: center;
+  justify-content: center;
+  max-width: 300px;
 }
 
 .bags-catagory {
-    display: flex;
-    background: url("../images/bags-category.jpg");
-    background-size:cover;
-    text-align: center;
-    width: 50%;
-    height: 175px;
-    align-items: center;
-    color: white;
-    justify-content: center;
+  display: flex;
+  background: url("../images/bags-category.jpg");
+  background-size: cover;
+  text-align: center;
+  width: 50%;
+  height: 175px;
+  align-items: center;
+  justify-content: center;
+  max-width: 300px;
 }
 
-.womans-catagory { 
-    display: flex;
-    background: url("../images/womens-category.jpg");
-    background-size:cover;
-    text-align: center;
-    width: 100%;
-    height: 175px;
-    align-items: center;
-    color: white;
-    justify-content: center;
+.womans-catagory {
+  display: flex;
+  background: url("../images/womens-category.jpg");
+  background-size: cover;
+  text-align: center;
+  width: 100%;
+  height: 175px;
+  align-items: center;
+  justify-content: center;
+  max-width: 600px;
+}
+
+/* SHOP SECTION END!!!! */
+.sign-up {
+  font-family: 20px;
 }
 
 /* Form Style */
 .subscribe-form {
-    border: 1px solid red;
-    max-width: 400px;
-    margin: auto;
-    position: relative;
+  border: 1px solid red;
+  max-width: 400px;
+  margin: auto;
+  position: relative;
 }
 
-.subscribe-form  input[type="email"]{
-    width: 100%;
+.subscribe-form input[type="email"] {
+  width: 100%;
 }
 
 .subscribe-form .subscribe-button {
-    position: absolute;
-    right: 0;
-    top: 0;
-    background-color:#e2574c;
-    /* hover:#b64036; */
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: #e2574c;
+  /* hover:#b64036; */
 }
 
-/* .shop-section {
-flex-wrap: wrap;
-} */
+.shop-section {
+  flex-wrap: wrap;
+  padding: 10px;
+  margin: 10px;
+}
 
+.address {
+  color: #969696;
+}
 
 /* @media screen and (min-width: 600px) {
   .header {
   
   } */
-  /* .someclass {
+/* .someclass {
     /* css properties */
-  /* } */
+/* } */
 
 /* @media screen and (max-width: 900px) {
   body {
