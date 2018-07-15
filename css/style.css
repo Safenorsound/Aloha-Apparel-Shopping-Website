@@ -16,12 +16,12 @@
   display: flex;
   justify-content: space-between;
   /* text-align: center; */
-  font-family:PlayfairDisplay, serif;
+  font-family: PlayfairDisplay, serif;
 }
 
 .nav {
   display: flex;
-  font-family:Raleway Web, sans-serif;
+  font-family: Raleway Web, sans-serif;
   list-style-type: none;
   box-sizing: border-box;
   justify-content: space-around;
@@ -29,7 +29,6 @@
   flex: 1 0 auto;
   vertical-align: baseline;
   align-self: center;
-  
 }
 
 a {
@@ -134,7 +133,7 @@ font-size: 2.5rem;
   /* box-sizing:border-box; */
   width: 100%;
   min-width: 600px;
-  @media only screen and (min-width: 600px);
+  /* @media only screen and (min-width: 600px); */
   /* border: 20px white; */
   /* background-size: cover, cover; */
   /* display: block; */
@@ -281,7 +280,9 @@ font-size: 2.5rem;
   text-align: center;
 }
 .main-carousel {
-  color: #e2574c;
+  /* color: #e2574c; */
+  /* height: 600px; */
+  /* border: 40px white; */
 }
 
 /* SHOP SECTION END!!!! */
@@ -347,7 +348,10 @@ font-size: 2.5rem;
   position: relative;
   /* font: 400 11px; */
   /* margin: auto; */
+}
 
+.a mailto:info@alohaapparel.com {
+  color: white;
 }
 
 .subscribe-form button:hover {
@@ -378,6 +382,7 @@ font-size: 2.5rem;
 display: flex;
 text-align: center;
 justify-content: space-between;
+font-size: 16px;
 }
 
 .social-media ul {
