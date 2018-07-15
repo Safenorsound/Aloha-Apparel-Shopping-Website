@@ -12,6 +12,12 @@ $(document).ready(function() {
 // Code for the smooth Scroll. 
 // Code for the Alert boxes
 
+// This is the Subscribe Button//
+
+$("button").on("click", function() {
+  alert("Did you enter a valid email address?");
+});
+
 $("#my-form").on("submit", function(event) {
   event.preventDefault();
   if ($("#my-text-input").val() == "") {
