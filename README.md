@@ -1,4 +1,4 @@
 # Aloha Project
 
-These are the deatils of the Aloha Project. 
+These are the details of the Aloha Project. 
 

@@ -12,21 +12,39 @@
   display: flex;
   justify-content: space-between;
   /* text-align: center; */
-  font-family: Playfair Display;
+  font-family:PlayfairDisplay, serif;
 }
 
 .nav {
   display: flex;
+  font-family:Raleway Web, sans-serif;
   list-style-type: none;
   box-sizing: border-box;
   justify-content: space-around;
   color: #e2574c;
   flex: 1 0 auto;
+  vertical-align: baseline;
 }
 
 a {
   color: #e2574c;
   text-decoration: none;
+}
+
+.about {
+  text-align: center;
+  padding: 4rem;
+}
+
+.hand-crafted-text {
+font-size: 1.4rem;
+}
+
+.only-the-finest {
+font-size: 1.15rem;
+font-family: Raleway Web, sans-serif;
+font-weight: 200;
+
 }
 
 .shop-section a {
@@ -43,7 +61,7 @@ element.style {
 }
 
 .p {
-  font-family: 14px Raleway Light;
+  font-family: 14px Raleway Web, sans-serif;
 }
 
 .banner {
@@ -54,6 +72,7 @@ element.style {
   margin: 15px; */
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url("../images/banner-girl.png"), url("../images/flower-bkgd.jpg");
+  text-shadow: 2px 2px 4px hsla(0,0%,3);
   background-size: cover, 150px 369px, cover;
   background-repeat: no-repeat, no-repeat;
   background-position: bottom, center;
@@ -66,7 +85,7 @@ element.style {
   color: #fff;
   font-weight: 700;
   text-align: center;
-  font-family: Playfair Display; Serif;
+  font-family: Playfair Display, Serif;
   /* align-content: center; */
   position: absolute;
   /* position: relative; */
@@ -77,10 +96,11 @@ element.style {
   width: 80%;
 }
 
-/* .new-collection [font-family: Playfair Display
-  font-size: 14px;] .about {
-  color: #2d2d2d;
-  max-width: 100%;
+.new-collection {
+  font-size: 2em;
+  font-family: Raleway Web, sans-serif;
+  /* color: #2d2d2d; */
+  /* max-width: 100%;
   height: 200px;
   padding: 20px;
   text-align: center;
@@ -91,6 +111,7 @@ element.style {
 
 .season-date {
 font-weight: 400px;
+font-size: 2.5rem;
 
 }
 
@@ -121,7 +142,7 @@ font-weight: 400px;
 .updates-section {
   color: white;
   display: flex;
-  background-image: url(../images/wave-bkgd.jpg);
+  background: linear-gradient(180deg,rgba(0,0,0,.15) 0,rgba(0,0,0,.15)), url(../images/wave-bkgd.jpg);
   /* background: linear-gradient( rgba(0, 0, 0, 0.3) */
   height: 350px;
   background-position: bottom;
@@ -136,13 +157,6 @@ font-weight: 400px;
   max-width: 1240px;
   color: white;
 }
-
-.social-media ul {
-  list-style-type: none;
-  background: black;
-  color: white;
-}
-
 /* .container { */
 /* display: flex;  */
 /* or inline-flex */
@@ -150,8 +164,9 @@ font-weight: 400px;
 
 /* SHOP SECTION!!! */
 .mens-catagory {
-  background: url("../images/mens-category.jpg");
-  background: linear-gradient(180deg);
+  display:flex;
+  background: linear-gradient(180deg,rgba(0,0,0,.15) 0,rgba(0,0,0,.15)), url("../images/mens-category.jpg");
+  /* background: linear-gradient(180deg); */
   width: 100%;
   /* flex-basis: <height> | auto; */
   height: 200px;
@@ -160,23 +175,28 @@ font-weight: 400px;
   justify-content: center;
   align-items: center;
   text-align: center;
+  text-shadow: 2px 2px 4px hsla(0,0%,3);
+  font-family: Raleway Web, sans-serif;
   border-bottom: 4px solid white;
   border-right: 4px solid white;
   border-top: 4px solid white;
   border-left: 4px solid white;
-
+  font-size: 1.8rem;
 }
 
 .trends-catagory {
   display: flex;
-  background: url("../images/trends-category.jpg");
+  background:  linear-gradient(180deg,rgba(0,0,0,.15) 0,rgba(0,0,0,.15)), url("../images/trends-category.jpg");
   background-size: cover;
-  text-align: center;
+  /* text-align: center; */
+  text-shadow: 2px 2px 4px hsla(0,0%,3);
   width: 50%;
   height: 200px;
   align-items: center;
   justify-content: center;
   max-width: 300px;
+  font-family: Raleway Web, sans-serif;
+  font-size: 1.8rem;
   border-top: 4px solid white;
   border-right: 4px solid white;
   border-bottom: 4px solid white;
@@ -185,7 +205,7 @@ font-weight: 400px;
 
 .glasses-catagory {
   display: flex;
-  background: url("../images/glasses-category.jpg");
+  background: linear-gradient(180deg,rgba(0,0,0,.15) 0,rgba(0,0,0,.15)), url("../images/glasses-category.jpg");
   background-size: cover;
   text-align: center;
   width: 50%;
@@ -193,6 +213,9 @@ font-weight: 400px;
   align-items: center;
   justify-content: center;
   max-width: 300px;
+  text-shadow: 2px 2px 4px hsla(0,0%,3);
+  font-family: Raleway Web, sans-serif;
+  font-size: 1.8rem;
   border-bottom: 4px solid white;
   border-left: 4px solid white;
   border-top: 4px solid white;
@@ -201,14 +224,17 @@ font-weight: 400px;
 
 .sale-catagory {
   display: flex;
-  background: url("../images/sale-category.jpg");
+  background: linear-gradient(180deg,rgba(0,0,0,.15) 0,rgba(0,0,0,.15)), url("../images/sale-category.jpg");
   background-size: cover;
   text-align: center;
+  text-shadow: 2px 2px 4px hsla(0,0%,3);
   width: 50%;
   height: 175px;
   align-items: center;
   justify-content: center;
   max-width: 300px;
+  font-family: Raleway Web, sans-serif;
+  font-size: 1.8rem;
   border-bottom: 4px solid white;
   border-right: 4px solid white;
   border-left: 4px solid white;
@@ -217,79 +243,93 @@ font-weight: 400px;
 
 .bags-catagory {
   display: flex;
-  background: url("../images/bags-category.jpg");
+  background: linear-gradient(180deg,rgba(0,0,0,.15) 0,rgba(0,0,0,.15)), url("../images/bags-category.jpg");
   background-size: cover;
   text-align: center;
+  text-shadow: 2px 2px 4px hsla(0,0%,3);
   width: 50%;
   height: 175px;
   align-items: center;
   justify-content: center;
   max-width: 300px;
+  font-family: Raleway Web, sans-serif;
+  font-size: 1.8rem;
   border-bottom: 4px solid white;
   border-top: 4px solid white;
   border-left: 4px solid white;
+  border-right: 4px solid white;
 }
 
 .womans-catagory {
   display: flex;
-  background: url("../images/womens-category.jpg");
+  background: linear-gradient(180deg,rgba(0,0,0,.15) 0,rgba(0,0,0,.15)), url("../images/womens-category.jpg");
   background-size: cover;
   text-align: center;
   width: 100%;
   height: 175px;
   align-items: center;
+  text-shadow: 2px 2px 4px hsla(0,0%,3);
+  font-family: Raleway Web, sans-serif;
+  font-size: 1.8rem;
   justify-content: center;
   max-width: 600px;
   border-top: 4px solid white;
+  border-left: 4px solid white;
+  border-right: 4px solid white;
 }
 
+.featured {
+  font-family: Playfair Display Web, serif;
+  font-size: 2rem;
+  text-align: center;
+}
 .main-carousel {
   color: #e2574c;
 }
 
 /* SHOP SECTION END!!!! */
 .signup-wrapper{
-  font-family: 20px;
+  font-family: Raleway Web, sans-serif;
+  text-shadow: 2px 2px 4px hsla(0,0%,3);
+  /* font-family: 20px; */
   /* height: 600px; */
 }
 
 /* Form Style */
 .subscribe-form {
-  padding: 12px;
+  padding: 5px;
   border-radius: 25px;
   display: flex;
   border: 1px solid red;
   background: #fff;
   max-width: 400px;
   margin: auto;
-  position: relative;
+  position: auto;
   justify-content: space-between;
+  height: auto;
   /* height: 25px; */
 }
 
 .subscribe-form input {
-  width: 123px;
+  width: 300px;
   border: none;
   color: black;
   font-family: Raleway Web, sans-serif;
   font-size: 1rem;
-  font-weight: 400;
-  line-height: 2;
+  font-weight: 300;
+  line-height: 1.1;
   font-style: normal;
   right:.25rem;
-  top: .25rem;
-  /* padding: .2rem 1rem; */
-
-
-  /* height: 30px; */
+  top: .30rem;
 }
 
 .subscribe-form button {
-  width: 25%;
+  width: 30%;
   border-radius: 25px;
   background-color: #e2574c;
   color: white;
-  height: 32px;
+  font-family: Raleway Web, sans-serif;
+  height: 40px;
   justify-content: space-between;
   position: relative;
   /* margin: auto; */
@@ -298,7 +338,6 @@ font-weight: 400px;
 
 .subscribe-form button:hover {
   background-color: #b64036;
-
 }
 
 
@@ -316,6 +355,7 @@ font-weight: 400px;
   background-color: #242424;
   color: white;
   text-align: center;
+  
   font-family: Playfair Display Web, serif;
 }
 
@@ -324,7 +364,13 @@ font-weight: 400px;
 display: flex;
 text-align: center;
 justify-content: space-between;
+}
 
+.social-media ul {
+  list-style-type: none;
+  font-family: Raleway Web, sans-serif;
+  background: #242424;
+  color: white;
 }
 
 /* @media screen and (min-width: 600px) {
