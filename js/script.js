@@ -1,22 +1,56 @@
-$(document).ready(function() {
+$(document).ready(function(){
 
-    $('.main-carousel').flickity({
+  var elem = document.querySelector('.main-carousel');
+var flkty = new Flickity( elem, {
   // options
-    cellAlign: 'left',
-      contain: true
-    });
+  cellAlign: 'left',
+  contain: true
+});
 
-  // your jQuery code here...
+// element argument can be a selector string
+//   for an individual element
+// var flkty = new Flickity( '.main-carousel', {
+//   // options
+// });
 
-// console.log("Hey, Joe!");
+  //   $('.main-carousel').flickity({
+  // // options
+  //   cellAlign: 'left',
+  //     contain: true
+  //   });
+
+// Flickity Scripts
+$('.main-carousel').flickity({
+  cellAlign: center,
+  contain: true,
+  draggable: true,
+  prevNextButtons: false,
+  autoPlay: true,
+  setGallerySize: true,
+  freeScroll: false,
+  groupCells: true
+});
+
 // Code for the smooth Scroll. 
+
+// smooth scroll - 
+$(document).on('click', 'a', function(event){
+  // Get the height of the header
+  var headerHeight = $('header').height();
+
+  event.preventDefault();
+
+  $('html, body').animate({
+      scrollTop: $( "#"+.$(this, 'href') ).offset().top - $('header').height() + 5
+  }, 500);
+});
 // Code for the Alert boxes
 
 // This is the Subscribe Button//
 
-$("button").on("click", function() {
-  alert("Did you enter a valid email address?");
-});
+// $("button").on("click", function() {
+//   alert("Did you enter a valid email address?");
+// });
 
 // $("#my-form").on("submit", function(event) {
 //   event.preventDefault();

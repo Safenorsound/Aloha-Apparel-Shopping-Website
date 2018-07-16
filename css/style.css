@@ -1,7 +1,12 @@
+.p {
+  font-size: 14px;
+}
+
 .aloha-logo {
   height: 50px;
   padding: 15px;
   cursor: pointer;
+  order: 0;
 }
 
 .shopping-cart {
@@ -10,6 +15,7 @@
   padding: 15px;
   cursor: pointer;
   text-align: right;
+  order: 3;
 }
 
 .header {
@@ -29,6 +35,7 @@
   flex: 1 0 auto;
   vertical-align: baseline;
   align-self: center;
+  order: 3;
 }
 
 a {
@@ -46,7 +53,7 @@ font-size: 1.4rem;
 }
 
 .only-the-finest {
-font-size: 1.15rem;
+font-size: 14px;
 font-family: Raleway Web, sans-serif;
 font-weight: 200;
 
@@ -97,7 +104,7 @@ element.style {
   box-sizing: border-box;
   text-shadow: 2px 2px 4px hsla(0,0%,39%,.8);
   top: 50%;
-  transform: translate( 10%, -50%);
+  transform: translate( 13%, -50%);
   width: 80%;
 }
 
@@ -143,7 +150,7 @@ font-size: 2.5rem;
 
 .h1 {
   text-align: center;
-  min width: 600px;
+  min-width: 600px;
 }
 
 .main-carousel {
@@ -287,6 +294,7 @@ font-size: 2.5rem;
 
 /* SHOP SECTION END!!!! */
 .signup-wrapper{
+  font-size: 14px;
   font-family: Raleway Web, sans-serif;
   text-shadow: 2px 2px 4px hsla(0,0%,39%,.8);
   /* font-family: 20px; */
@@ -335,6 +343,7 @@ font-size: 2.5rem;
   font-style: normal;
   right:.25rem;
   top: .20rem;
+  border: 0;
 }
 
 .subscribe-form button {
@@ -348,10 +357,6 @@ font-size: 2.5rem;
   position: relative;
   /* font: 400 11px; */
   /* margin: auto; */
-}
-
-.a mailto:info@alohaapparel.com {
-  color: white;
 }
 
 .subscribe-form button:hover {
@@ -370,24 +375,34 @@ font-size: 2.5rem;
 }
 
 .footer-section {
+  font-size: 14px;
   background-color: #242424;
   color: white;
-  text-align: center;
+  text-align: left;
+  width: 100%;
+  display: inline-flex;
   text-shadow: 2px 2px 4px hsla(0,0%,39%,.8);
   font-family: Playfair Display Web, serif;
 }
 
-@media only screen and (min-width: 600px)
-.footer-section {
-display: flex;
+/* Tablet Size */
+@media only screen and (min-width: 600px) {
+  
+  p {font-size: 16px;}
+  only-the-finest {font-size: 16px;}
+  signup-wrapper {font-size: 16px;}
+  footer-section {font-size: 16px;}
+  }
+
+/* display: flex;
 text-align: center;
 justify-content: space-between;
 font-size: 16px;
-}
+} */
 
 .social-media ul {
   list-style-type: none;
-  font-family: Raleway Web, sans-serif;
+  font-family: Raleway Web, white; sans-serif;
   background: #242424;
   color: white;
 }
