@@ -1,25 +1,17 @@
-$(document).ready(function(){
+$(document).ready(function() {
 
   var elem = document.querySelector('.main-carousel');
 var flkty = new Flickity( elem, {
   // options
   cellAlign: 'left',
-  contain: true
+  contain: true,
 });
 
-// element argument can be a selector string
-//   for an individual element
-// var flkty = new Flickity( '.main-carousel', {
-//   // options
-// });
-
-  //   $('.main-carousel').flickity({
-  // // options
-  //   cellAlign: 'left',
-  //     contain: true
-  //   });
-
 // Flickity Scripts
+
+// I couldn't make it functional. 
+// displaying blank images and overlapping into the next section
+
 $('.main-carousel').flickity({
   cellAlign: center,
   contain: true,
@@ -31,19 +23,23 @@ $('.main-carousel').flickity({
   groupCells: true
 });
 
-// Code for the smooth Scroll. 
+ // smooth scroll
+//  attempted from astack over-flow suggestion:
+// https://stackoverflow.com/questions/7717527/smooth-scrolling-when-clicking-an-anchor-link
 
-// smooth scroll - 
-$(document).on('click', 'a', function(event){
+ $(document).on('click','a', function(event){
   // Get the height of the header
   var headerHeight = $('header').height();
 
   event.preventDefault();
 
   $('html, body').animate({
-      scrollTop: $( "#"+.$(this, 'href') ).offset().top - $('header').height() + 5
+      scrollTop: $( $.attr(this, 'href') ).offset().top - $('header').height() + 5
   }, 500);
 });
+
+});
+
 // Code for the Alert boxes
 
 // This is the Subscribe Button//
@@ -52,15 +48,20 @@ $(document).on('click', 'a', function(event){
 //   alert("Did you enter a valid email address?");
 // });
 
-// $("#my-form").on("submit", function(event) {
-//   event.preventDefault();
-//   if ($("#my-text-input").val() == "") {
-//     alert("You missed the field.");
-//   } else {
-//     alert("Thanks for filling the field!");
-//   }
-// });
   // use code on slide 38 of JQuery (above: The Change Method)
+
+  
+// This was a submission attempted from the following project
+// https://github.com/KC74/project_aloha/blob/master/js/scripts.js
+
+$("#button").on("submit", function(event) {
+  event.preventDefault();
+  if ($("#my-text-input").val() == "") {
+    alert("Did you enter a valid email address?.");
+  } else {
+    alert("Thank you for subscribing!");
+  }
+});
 
   // coppies from https://css-tricks.com/snippets/jquery/smooth-scrolling/
   // Scroll to specific values
@@ -103,6 +104,4 @@ $(document).on('click', 'a', function(event){
 //     }
 //   });
 
-
-
-});
+// });

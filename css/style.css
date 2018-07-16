@@ -173,7 +173,8 @@ font-size: 2.5rem;
   width: 100%;
   /* flex-basis: <height> | auto; */
   height: 200px;
-  max-width: 604px;
+  /* flex-basis: 100% */
+  max-width: 600px;
   background-size: cover;
   justify-content: center;
   align-items: center;
@@ -194,6 +195,7 @@ font-size: 2.5rem;
   /* text-align: center; */
   text-shadow: 2px 2px 4px hsla(0,0%,3);
   width: 50%;
+  flex-basis: 50%;
   height: 200px;
   align-items: center;
   justify-content: center;
@@ -343,7 +345,7 @@ font-size: 2.5rem;
   font-style: normal;
   right:.25rem;
   top: .20rem;
-  border: 0;
+  /* border: 0; */
 }
 
 .subscribe-form button {
@@ -378,11 +380,21 @@ font-size: 2.5rem;
   font-size: 14px;
   background-color: #242424;
   color: white;
-  text-align: left;
+  align-items: space-around;
   width: 100%;
   display: inline-flex;
   text-shadow: 2px 2px 4px hsla(0,0%,39%,.8);
   font-family: Playfair Display Web, serif;
+  vertical-align: baseline;
+   
+}
+
+.social-media ul {
+  list-style-type: none;
+  font-family: Raleway Web, white; sans-serif;
+  text-align: right;
+  background: #242424;
+  color: white;
 }
 
 /* Tablet Size */
@@ -400,12 +412,7 @@ justify-content: space-between;
 font-size: 16px;
 } */
 
-.social-media ul {
-  list-style-type: none;
-  font-family: Raleway Web, white; sans-serif;
-  background: #242424;
-  color: white;
-}
+
 
 /* @media screen and (min-width: 600px) {
   .header {
