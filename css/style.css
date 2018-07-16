@@ -22,7 +22,7 @@
   display: flex;
   justify-content: space-between;
   /* text-align: center; */
-  font-family: PlayfairDisplay, serif;
+  font-family: 'Playfair Display', serif;
 }
 
 .nav {
@@ -54,7 +54,7 @@ font-size: 1.4rem;
 
 .only-the-finest {
 font-size: 14px;
-font-family: Raleway Web, sans-serif;
+font-family: 'Raleway Web', sans-serif;
 font-weight: 200;
 
 }
@@ -73,7 +73,7 @@ element.style {
 }
 
 .p {
-  font-family: 14px Raleway Web, sans-serif;
+  font-family: 14px 'Raleway Web', sans-serif;
 }
 
 .banner {
@@ -97,7 +97,7 @@ element.style {
   color: #fff;
   font-weight: 700;
   text-align: center;
-  font-family: Playfair Display, Serif;
+  font-family: 'Playfair Display', Serif;
   /* align-content: center; */
   position: absolute;
   /* position: relative; */
@@ -110,7 +110,7 @@ element.style {
 
 .new-collection {
   font-size: 2em;
-  font-family: Raleway Web, sans-serif;
+  font-family: 'Raleway Web', sans-serif;
   /* font-weight: 200; */
   /* color: #2d2d2d; */
   /* max-width: 100%;
@@ -154,11 +154,16 @@ font-size: 2.5rem;
 }
 
 .main-carousel {
-  display: flex;
+  /* display: flex;
   flex-wrap: wrap;
   margin: 10px auto;
-  max-width: 1240px;
-  color: white;
+  max-width: 1240px; */
+  /* color: white; */
+}
+
+.carousel-cell {
+  width: 100%;
+  text-align: center;
 }
 /* .container { */
 /* display: flex;  */
@@ -180,7 +185,7 @@ font-size: 2.5rem;
   align-items: center;
   text-align: center;
   text-shadow: 2px 2px 4px hsla(0,0%,3);
-  font-family: Raleway Web, sans-serif;
+  font-family: 'Raleway Web', sans-serif;
   border-bottom: 4px solid white;
   border-right: 4px solid white;
   border-top: 4px solid white;
@@ -284,7 +289,7 @@ font-size: 2.5rem;
 }
 
 .featured {
-  font-family: Playfair Display Web, serif;
+  font-family: 'Playfair Display Web', serif;
   font-size: 2rem;
   text-align: center;
 }
@@ -309,7 +314,7 @@ font-size: 2.5rem;
   background: linear-gradient(180deg,rgba(0,0,0,.15) 0,rgba(0,0,0,.15)), url(../images/wave-bkgd.jpg);
   /* background: linear-gradient( rgba(0, 0, 0, 0.3) */
   height: 350px;
-  font-family: Playfair Display Web, serif;
+  font-family: 'Playfair Display Web', serif;
   text-align: center;
   background-position: bottom;
   flex-basis: 100%;
@@ -322,29 +327,32 @@ font-size: 2.5rem;
 .subscribe-form {
   padding: 5px;
   border-radius: 25px;
-  display: flex;
-  border: 1px solid red;
+  /* display: flex; */
+  /* border: 1px solid red; */
   background: #fff;
   max-width: 400px;
   margin: auto;
-  position: auto;
-  justify-content: space-between;
+  /* position: auto; */
+  justify-content: space-around;
   height: auto;
+  /* padding-left: 5px; */
   /* height: 25px; */
 }
 
 .subscribe-form input {
   text-rendering: auto;
-  width: 250px;
+  width: 200px;
   border: none;
-  color: black;
-  font-family: Raleway Web, sans-serif;
+  /* color: black; */
+  font-family: 'Raleway Web', sans-serif;
   font-size: 1rem;
   font-weight: 300;
   line-height: 1;
   font-style: normal;
   right:.25rem;
   top: .20rem;
+  border-radius: 25px;
+  /* padding-left: 10px; */
   /* border: 0; */
 }
 
@@ -353,10 +361,11 @@ font-size: 2.5rem;
   border-radius: 30px;
   background-color: #e2574c;
   color: white;
-  font-family: Raleway Web, sans-serif;
+  font-family: 'Raleway Web', sans-serif;
   height: 35px;
   justify-content: space-between;
   position: relative;
+  border-radius: 25px;
   /* font: 400 11px; */
   /* margin: auto; */
 }
@@ -391,7 +400,7 @@ font-size: 2.5rem;
 
 .social-media ul {
   list-style-type: none;
-  font-family: Raleway Web, white; sans-serif;
+  font-family: "Raleway Web", sans-serif;
   text-align: right;
   background: #242424;
   color: white;
@@ -400,6 +409,10 @@ font-size: 2.5rem;
 /* Tablet Size */
 @media only screen and (min-width: 600px) {
   
+  .carousel-cell {
+    width: 50%;
+  }
+
   p {font-size: 16px;}
   only-the-finest {font-size: 16px;}
   signup-wrapper {font-size: 16px;}
@@ -414,18 +427,8 @@ font-size: 16px;
 
 
 
-/* @media screen and (min-width: 600px) {
-  .header {
-  
-  } */
-/* .someclass {
-    /* css properties */
-/* } */
-
-/* @media screen and (max-width: 900px) {
-  body {
-  .banner: {
-   display:flex: 
-   flex-wrap:no-wrap.  ;
+@media screen and (min-width: 1240px) {
+  .carousel-cell {
+    width: 25%;
   }
-} */
+}

@@ -1,11 +1,11 @@
 $(document).ready(function() {
 
-  var elem = document.querySelector('.main-carousel');
-var flkty = new Flickity( elem, {
-  // options
-  cellAlign: 'left',
-  contain: true,
-});
+//   var elem = document.querySelector('.main-carousel');
+// var flkty = new Flickity( elem, {
+//   // options
+//   cellAlign: 'left',
+//   contain: true,
+// });
 
 // Flickity Scripts
 
@@ -13,7 +13,7 @@ var flkty = new Flickity( elem, {
 // displaying blank images and overlapping into the next section
 
 $('.main-carousel').flickity({
-  cellAlign: center,
+  cellAlign: "center",
   contain: true,
   draggable: true,
   prevNextButtons: false,
@@ -38,7 +38,7 @@ $('.main-carousel').flickity({
   }, 500);
 });
 
-});
+
 
 // Code for the Alert boxes
 
@@ -51,7 +51,7 @@ $('.main-carousel').flickity({
   // use code on slide 38 of JQuery (above: The Change Method)
 
   
-// This was a submission attempted from the following project
+// This was adapeted from the following project:
 // https://github.com/KC74/project_aloha/blob/master/js/scripts.js
 
 $("#button").on("submit", function(event) {
@@ -105,3 +105,7 @@ $("#button").on("submit", function(event) {
 //   });
 
 // });
+
+
+
+}); // doc ready
