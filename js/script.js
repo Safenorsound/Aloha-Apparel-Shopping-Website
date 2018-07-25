@@ -108,4 +108,15 @@ $("#button").on("submit", function(event) {
 
 
 
+// Skip Link Bug fix from the following slide:
+// http://red-wdp.herokuapp.com/slides/web-accessibility-slides/#59
+
+$(function() {
+  $("a[href^='#']").not("a[href='#']").click(function() {
+     $("#"+$(this).attr("href").slice(1)+"").focus();
+  });
+});
+
+
+
 }); // doc ready
