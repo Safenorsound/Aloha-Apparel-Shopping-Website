@@ -161,27 +161,14 @@ h3 {
 
 p .main-carousel{
   color: #969696;
-  font family: "Raleway Web";
+  font-family: "Raleway Web";
   font-weight: 700;
-}
-
-.main-carousel {
-  /* colour: #e2574c; */
-  /* display: flex;
-  flex-wrap: wrap;
-  margin: 10px auto;
-  max-width: 1240px; */
-  /* color: white; */
 }
 
 .carousel-cell {
   width: 100%;
   text-align: center;
 }
-/* .container { */
-/* display: flex;  */
-/* or inline-flex */
-/* } */
 
 /* SHOP SECTION!!! */
 .mens-catagory {
@@ -306,11 +293,11 @@ p .main-carousel{
   font-size: 2rem;
   text-align: center;
 }
-.main-carousel {
+/* .main-carousel { */
   /* color: #e2574c; */
   /* height: 600px; */
   /* border: 40px white; */
-}
+/* } */
 
 /* SHOP SECTION END!!!! */
 .signup-wrapper{
@@ -411,7 +398,10 @@ h1 {
   text-shadow: 2px 2px 4px hsla(0,0%,39%,.8);
   font-family: Playfair Display Web, serif;
   vertical-align: baseline;
-   
+}
+
+.ul {
+  display: none;
 }
 
 .social-media ul {
