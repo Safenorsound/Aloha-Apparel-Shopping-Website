@@ -25,7 +25,6 @@
 .header {
   display: flex;
   justify-content: space-between;
-  /* text-align: center; */
   font-family: 'Playfair Display', serif;
 }
 
@@ -65,7 +64,6 @@ font-weight: 200;
 
 a:hover {
   color: #b64036;
-  /* text-decoration: underline; */
 }
 
 element.style {
@@ -79,9 +77,6 @@ element.style {
 .banner {
   height: 370px;
   position: relative;
-  /* padding: 50px; */
-  /* border: 10px;
-  margin: 15px; */
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url("../images/banner-girl.png"), url("../images/flower-bkgd.jpg");
   text-shadow: 2px 2px 4px hsla(0,0%,3);
@@ -98,9 +93,7 @@ element.style {
   font-weight: 700;
   text-align: center;
   font-family: 'Playfair Display', Serif;
-  /* align-content: center; */
   position: absolute;
-  /* position: relative; */
   box-sizing: border-box;
   text-shadow: 2px 2px 4px hsla(0,0%,39%,.8);
   top: 50%;
@@ -112,15 +105,6 @@ element.style {
   font-size: 1.25em;
   font-family: 'Raleway Web', sans-serif;
   margin-bottom: 1.5rem;
-  /* font-weight: 200; */
-  /* color: #2d2d2d; */
-  /* max-width: 100%;
-  height: 200px;
-  padding: 20px;
-  text-align: center;
-  justify-content: center; */
-
-  /* height: 800px */
 }
 
 .season-date {
@@ -140,15 +124,8 @@ text-transform:none;
   flex-wrap: wrap;
   text-align: center;
   justify-content: center;
-  /* box-sizing:border-box; */
   width: 100%;
   min-width: 600px;
-  /* @media only screen and (min-width: 600px); */
-  /* border: 20px white; */
-  /* background-size: cover, cover; */
-  /* display: block; */
-  /* .mens-catagory {
-      background: src="/images/mens-category.jpg); */
 }
 
 .h1 {
@@ -178,11 +155,8 @@ p .main-carousel{
 .mens-catagory {
   display:flex;
   background: linear-gradient(180deg,rgba(0,0,0,.15) 0,rgba(0,0,0,.15)), url("../images/mens-category.jpg");
-  /* background: linear-gradient(180deg); */
   width: 100%;
-  /* flex-basis: <height> | auto; */
   height: 200px;
-  /* flex-basis: 100% */
   max-width: 600px;
   background-size: cover;
   justify-content: center;
@@ -297,19 +271,12 @@ p .main-carousel{
   font-size: 2rem;
   text-align: center;
 }
-/* .main-carousel { */
-  /* color: #e2574c; */
-  /* height: 600px; */
-  /* border: 40px white; */
-/* } */
 
 /* SHOP SECTION END!!!! */
 .signup-wrapper{
   font-size: 14px;
   font-family: Raleway Web, sans-serif;
   text-shadow: 2px 2px 4px hsla(0,0%,39%,.8);
-  /* font-family: 20px; */
-  /* height: 600px; */
 }
 h1 {
   font-family: "Playfair Display Web";
@@ -319,7 +286,6 @@ h1 {
   color: white;
   display: flex;
   background: linear-gradient(180deg,rgba(0,0,0,.15) 0,rgba(0,0,0,.15)), url(../images/wave-bkgd.jpg);
-  /* background: linear-gradient( rgba(0, 0, 0, 0.3) */
   height: 350px;
   font-family: 'Playfair Display Web', serif;
   text-align: center;
@@ -334,16 +300,11 @@ h1 {
 .subscribe-form {
   padding: 5px;
   border-radius: 25px;
-  /* display: flex; */
-  /* border: 1px solid red; */
   background: #fff;
   max-width: 400px;
   margin: auto;
-  /* position: auto; */
   justify-content: space-around;
   height: auto;
-  /* padding-left: 5px; */
-  /* height: 25px; */
 }
 
 .subscribe-form input {
@@ -370,14 +331,11 @@ h1 {
   justify-content: space-between;
   position: relative;
   border-radius: 25px;
-  /* font: 400 11px; */
-  /* margin: auto; */
 }
 
 .subscribe-form button:hover {
   background-color: #b64036;
 }
-
 
 .shop-section {
   flex-wrap: wrap;
@@ -391,6 +349,7 @@ h1 {
 
 .footer-section {
   font-size: 14px;
+  text-align:center;
   background-color: #242424;
   color: white;
   align-items: space-around;
@@ -399,10 +358,6 @@ h1 {
   text-shadow: 2px 2px 4px hsla(0,0%,39%,.8);
   font-family: Playfair Display Web, serif;
   vertical-align: baseline;
-}
-
-.ul {
-  display: none;
 }
 
 .social-media ul {
@@ -416,7 +371,6 @@ h1 {
 .footer-section a {
 color: white;
 }
-
 
 .screen-reader-text {
   clip: rect(1px, 1px, 1px, 1px);
@@ -436,11 +390,22 @@ color: white;
   z-index: 100000; /* above all content */
 }
 
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+}
+
 /* Tablet Size */
 @media only screen and (min-width: 600px) {
   
   .carousel-cell {
     width: 50%;
+  }
+
+  .ul {
+    list-style: none;
   }
 
   p {font-size: 16px;}
