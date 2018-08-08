@@ -125,7 +125,7 @@ text-transform:none;
   gap: 4px;
   display: flex;
   flex-wrap: wrap;
-  border: 4px solid #fff;
+  /* border: 4px solid #fff; */
   text-align: center;
   justify-content: center;
   width: 100%;
@@ -139,16 +139,16 @@ text-transform:none;
   display:flex;
   background: linear-gradient(180deg,rgba(0,0,0,.15) 0,rgba(0,0,0,.15)), url("../images/mens-category.jpg");
   width: 100%;
-  height: 200px;
-  /* max-width: 600px; */
+  height: 50vw;
   background-size: cover;
   justify-content: center;
   align-items: center;
   text-align: center;
   text-shadow: 2px 2px 4px hsla(0,0%,3);
   font-family: 'Raleway Web', sans-serif;
-  /* border-bottom: 4px solid white;
-  border-right: 4px solid white;
+  /* border: 4px solid white; */
+  /* border-bottom: 4px solid white; */
+  /* border-right: 4px solid white;
   border-top: 4px solid white;
   border-left: 4px solid white; */
   font-size: 1.8rem;
@@ -161,16 +161,16 @@ text-transform:none;
   text-align: center;
   text-shadow: 2px 2px 4px hsla(0,0%,3);
   width: 50%;
-  height: 200px;
+  height: 50vw;
   align-items: center;
   justify-content: center;
-  /* max-width: 300px; */
   font-family: Raleway Web, sans-serif;
   font-size: 1.8rem;
+
   /* border-top: 4px solid white;
   border-right: 4px solid white;
-  border-bottom: 4px solid white;
-  border-left: 4px solid white; */
+  border-bottom: 4px solid white; */
+  /* border-left: 4px solid white; */
 }
 
 .glasses-category {
@@ -179,17 +179,18 @@ text-transform:none;
   background-size: cover;
   text-align: center;
   width: 50%;
-  height: 200px;
+  height: 50vw;
   align-items: center;
   justify-content: center;
-  /* max-width: 300px; */
   text-shadow: 2px 2px 4px hsla(0,0%,3);
   font-family: Raleway Web, sans-serif;
   font-size: 1.8rem;
+  /* border: 4px solid white; */
+
   /* border-bottom: 4px solid white;
   border-left: 4px solid white;
-  border-top: 4px solid white;
-  border-right: 4px solid white; */
+  border-top: 4px solid white; */
+  /* border-right: 4px solid white; */
 }
 
 .sale-category {
@@ -199,16 +200,17 @@ text-transform:none;
   text-align: center;
   text-shadow: 2px 2px 4px hsla(0,0%,3);
   width: 50%;
-  height: 175px;
+  height: 50vw;
   align-items: center;
   justify-content: center;
-  /* max-width: 300px; */
   font-family: Raleway Web, sans-serif;
   font-size: 1.8rem;
+  /* border: 4px solid white; */
+
   /* border-bottom: 4px solid white;
   border-right: 4px solid white;
-  border-left: 4px solid white;
-  border-top: 4px solid white; */
+  /* border-left: 4px solid white; */
+  /* border-top: 4px solid white; */
 }
 
 .bags-category {
@@ -218,16 +220,17 @@ text-transform:none;
   text-align: center;
   text-shadow: 2px 2px 4px hsla(0,0%,3);
   width: 50%;
-  height: 175px;
+  height: 50vw;
   align-items: center;
   justify-content: center;
-  /* max-width: 300px; */
   font-family: Raleway Web, sans-serif;
   font-size: 1.8rem;
+  /* border: 4px solid white; */
+
   /* border-bottom: 4px solid white;
   border-top: 4px solid white;
-  border-left: 4px solid white;
-  border-right: 4px solid white; */
+  border-left: 4px solid white; */
+  /* border-right: 4px solid white; */
 }
 
 .womans-category {
@@ -236,15 +239,16 @@ text-transform:none;
   background-size: cover;
   text-align: center;
   width: 100%;
-  height: 175px;
+  height: 50vw;
+  /* border: 4px solid white; */
   align-items: center;
   text-shadow: 2px 2px 4px hsla(0,0%,3);
   font-family: Raleway Web, sans-serif;
   font-size: 1.8rem;
   justify-content: center;
-  /* max-width: 600px; */
-  /* border-top: 4px solid white;
-  border-left: 4px solid white;
+
+  /* border-top: 4px solid white; */
+  /* border-left: 4px solid white;
   border-right: 4px solid white; */
 }
 
