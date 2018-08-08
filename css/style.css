@@ -58,6 +58,7 @@ font-weight: 200;
 
 }
 
+/* To make the text White */
 .shop-section a {
   color:white;
 }
@@ -108,8 +109,9 @@ element.style {
 }
 
 .new-collection {
-  font-size: 2em;
+  font-size: 1.25em;
   font-family: 'Raleway Web', sans-serif;
+  margin-bottom: 1.5rem;
   /* font-weight: 200; */
   /* color: #2d2d2d; */
   /* max-width: 100%;
@@ -124,6 +126,8 @@ element.style {
 .season-date {
 font-weight: 400px;
 font-size: 2.5rem;
+font-family: Playfair Display Web,serif;
+text-transform:none;
 
 }
 
@@ -344,9 +348,8 @@ h1 {
 
 .subscribe-form input {
   text-rendering: auto;
-  width: 270px;
+  width: 265px;
   border: none;
-  /* color: black; */
   font-family: 'Raleway Web', sans-serif;
   font-size: 1rem;
   font-weight: 300;
@@ -355,8 +358,6 @@ h1 {
   right:.25rem;
   top: .20rem;
   border-radius: 25px;
-  /* padding-left: 10px; */
-  /* border: 0; */
 }
 
 .subscribe-form button {
@@ -411,6 +412,11 @@ h1 {
   background: #242424;
   color: white;
 }
+
+.footer-section a {
+color: white;
+}
+
 
 .screen-reader-text {
   clip: rect(1px, 1px, 1px, 1px);
