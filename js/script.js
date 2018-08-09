@@ -24,7 +24,7 @@ $('.main-carousel').flickity({
 });
 
  // smooth scroll
-//  attempted from astack over-flow suggestion:
+//  attempted from stack over-flow suggestion:
 // https://stackoverflow.com/questions/7717527/smooth-scrolling-when-clicking-an-anchor-link
 
  $(document).on('click','a', function(event){
