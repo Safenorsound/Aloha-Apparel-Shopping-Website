@@ -1,16 +1,6 @@
 $(document).ready(function() {
 
-//   var elem = document.querySelector('.main-carousel');
-// var flkty = new Flickity( elem, {
-//   // options
-//   cellAlign: 'left',
-//   contain: true,
-// });
-
-// Flickity Scripts
-
-// I couldn't make it functional. 
-// displaying blank images and overlapping into the next section
+// Flickity Carousel
 
 $('.main-carousel').flickity({
   cellAlign: "center",
@@ -38,8 +28,6 @@ $('.main-carousel').flickity({
   }, 500);
 });
 
-
-
 // Code for the Alert boxes
 
 // This is the Subscribe Button//
@@ -50,7 +38,6 @@ $('.main-carousel').flickity({
 
   // use code on slide 38 of JQuery (above: The Change Method)
 
-  
 // This was adapeted from the following project:
 // https://github.com/KC74/project_aloha/blob/master/js/scripts.js
 
@@ -105,8 +92,6 @@ $("#button").on("submit", function(event) {
 //   });
 
 // });
-
-
 
 // Skip Link Bug fix from the following slide:
 // http://red-wdp.herokuapp.com/slides/web-accessibility-slides/#59
