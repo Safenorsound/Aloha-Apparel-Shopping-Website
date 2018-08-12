@@ -13,12 +13,8 @@ $('.main-carousel').flickity({
   groupCells: true
 });
 
- // smooth scroll
-//  attempted from stack over-flow suggestion:
-// https://stackoverflow.com/questions/7717527/smooth-scrolling-when-clicking-an-anchor-link
+ $('.nav a').on('click',function(event){
 
- $(document).on('click','a', function(event){
-  // Get the height of the header
   var headerHeight = $('header').height();
 
   event.preventDefault();
@@ -41,9 +37,9 @@ $('.main-carousel').flickity({
 // This was adapeted from the following project:
 // https://github.com/KC74/project_aloha/blob/master/js/scripts.js
 
-$("#button").on("submit", function(event) {
+$(".button").on("click", function(event) {
   event.preventDefault();
-  if ($("#my-text-input").val() == "") {
+  if ($("#subscribe-form").val() == "") {
     alert("Did you enter a valid email address?.");
   } else {
     alert("Thank you for subscribing!");
@@ -101,7 +97,5 @@ $(function() {
      $("#"+$(this).attr("href").slice(1)+"").focus();
   });
 });
-
-
 
 }); // doc ready

@@ -25,12 +25,10 @@
   text-align: right;
   order: 2;
   width: 50px;
-  /* min-width: 50% */
-}
+ }
 
 .header {
   display: flex;
-  /* flex: 1 0 auto; */
   flex-wrap: wrap;
   justify-content: space-between;
   font-family: "Playfair Display", 'serif';
