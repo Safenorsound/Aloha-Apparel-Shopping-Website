@@ -12,6 +12,8 @@ $(document).ready(function() {
     groupCells: true
   });
 
+  // Smooth Scroll Function
+
   $('#nav a').click(function(event) {
     var headerHeight = $('header').height();
 
