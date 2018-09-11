@@ -100,16 +100,21 @@ element.style {
   /* padding-bottom: 100px; */
 }
 
-.p {
+p {
   font-family: 'Raleway Web', 'sans-serif';
   font-size: 14px;
 }
 
 .banner {
-  height: 370px;
+  height: 400px;
   position: relative;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url('../images/banner-girl.png'), url('../images/flower-bkgd.jpg');
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.25),
+      rgba(0, 0, 0, 0.25)
+    ),
+    url('../images/banner-girl.png') no-repeat center 60px,
+    url('../images/flower-bkgd.jpg') repeat-x top;
   text-shadow: 2px 2px 4px hsla(0, 0%, 39%, 0.8);
   background-size: cover, 150px 369px, cover;
   background-repeat: no-repeat, no-repeat;
@@ -396,7 +401,8 @@ button.submit-button {
   position: relative;
   border-radius: 25px;
   padding: 0.25rem;
-  right: 113px;
+  right: 112px;
+  top: -1px;
 }
 
 .subscribe-form button:hover {
@@ -416,7 +422,6 @@ button.submit-button {
 .footer-section {
   font-size: 14px;
   text-align: center;
-  align-items: center;
   background-color: #242424;
   color: white;
   padding: 4rem 0;
@@ -437,6 +442,10 @@ button.submit-button {
 .fa {
   display: inline-block;
   font-size: inherit;
+}
+
+i {
+  min-width: 25px;
 }
 
 .footer-section a {
@@ -479,6 +488,10 @@ button.submit-button {
 
 /* Tablet Size */
 @media only screen and (min-width: 600px) {
+  html {
+    font-size: 16px;
+  }
+
   p {
     font-size: 16px;
   }
@@ -651,6 +664,12 @@ button.submit-button {
   @media screen and (min-width: 1240px) {
     .carousel-cell {
       width: 25%;
+    }
+
+    .banner {
+      background-size: cover, 250px 615px, contain;
+      height: 550px;
+      position: relative;
     }
   }
 }
