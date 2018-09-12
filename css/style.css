@@ -24,28 +24,26 @@ div.logo {
   text-align: right;
   order: 2;
   justify-content: right;
-  align-self: right;
+  align-self: flex-end;
 }
 
 div.cart {
+  flex: 0 1 50%;
   flex-basis: 20%;
   align-self: flex-end;
-  align-self: right;
+  text-align: right;
 }
 
-.header {
+.header.container {
+  margin: 0 auto;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   font-family: 'Playfair Display', 'serif';
-  align-items: space-around;
 }
 
 .main-navigation a {
-  /* flex: 1 0 auto; */
-  /* flex-direction: row; */
-  /* flex-wrap: wrap; */
-  /* justify-content: space-between; */
   font-family: 'Raleway', 'sans-serif';
   list-style: none;
   color: #e2574c;
@@ -62,17 +60,15 @@ div.cart {
   padding-top: 1rem;
   flex: 1 0 auto;
   justify-content: center;
-  padding-left: 20px;
-  padding-right: 20px;
   flex-basis: 60%;
 }
 
 .main-navigation ul {
   list-style: none;
   display: flex;
-  /* text-align: center;
-  align-items: center; */
+  text-align: center;
 }
+
 .main-navigation a {
   margin: 0 5px;
 }
@@ -506,19 +502,6 @@ i {
     font-size: 3 rem;
   }
 
-  .main-navigation {
-    display: flex;
-    justify-content: center;
-    order: 2;
-    border-top: none;
-    padding-right: 0;
-    padding-left: 0;
-  }
-  .cart {
-    order: 3;
-    width: 48px;
-  }
-
   .season-date {
     font-size: 3rem;
   }
@@ -626,6 +609,27 @@ i {
     /* justify-content: right; */
     margin-left: 10px;
     text-align: left;
+  }
+}
+
+@media only screen and (min-width: 650px) {
+  .main-navigation {
+    display: flex;
+    justify-content: center;
+    order: 2;
+    border-top: none;
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .main-navigation li {
+    font-size: 0.9rem;
+    margin: 0 0.5rem;
+  }
+
+  .cart {
+    order: 3;
+    width: 48px;
   }
 }
 
