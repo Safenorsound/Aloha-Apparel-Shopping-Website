@@ -358,8 +358,14 @@ em {
   font-size: 2.5rem;
 }
 
-.update p {
-  padding-bottom: 10px;
+p.stay-updated {
+  font-size: 1.15rem;
+}
+
+.signup-wrapper {
+  padding-right: 15%;
+  padding-left: 15%;
+  text-align: center;
 }
 
 /* Form Style */
@@ -500,6 +506,7 @@ i {
   }
   .signup-wrapper {
     font-size: 3 rem;
+    padding-right: none;
   }
 
   .season-date {
