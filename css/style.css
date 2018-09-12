@@ -2,6 +2,10 @@
   outline: 0;
 }
 
+div.logo {
+  flex-basis: 20%;
+}
+
 .aloha-logo {
   flex: 0 1 50%;
   align-self: flex-start;
@@ -9,18 +13,24 @@
   padding: 15px;
   cursor: pointer;
   order: 1;
-  max-width: 120px;
+  max-width: 100px;
 }
 
 .shopping-cart {
   flex: 0 1 50%;
-  align-self: flex-end;
   height: 50px;
   padding: 15px;
   cursor: pointer;
   text-align: right;
   order: 2;
-  width: 50px;
+  justify-content: right;
+  align-self: right;
+}
+
+div.cart {
+  flex-basis: 20%;
+  align-self: flex-end;
+  align-self: right;
 }
 
 .header {
@@ -54,6 +64,7 @@
   justify-content: center;
   padding-left: 20px;
   padding-right: 20px;
+  flex-basis: 60%;
 }
 
 .main-navigation ul {
@@ -505,6 +516,7 @@ i {
   }
   .cart {
     order: 3;
+    width: 48px;
   }
 
   .season-date {
@@ -659,6 +671,10 @@ i {
 
     banner.container {
       max-width: 1240px;
+    }
+
+    img.shopping-cart {
+      width: 62px;
     }
 
     .banner {
