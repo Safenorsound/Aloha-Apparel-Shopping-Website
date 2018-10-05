@@ -148,7 +148,6 @@ p.season-date {
 
 h2 {
   font-size: 2.4rem;
-  font-style: italic;
   margin-bottom: 1.5rem;
   font-family: Playfair Display Web, serif;
 }
@@ -382,6 +381,7 @@ p.stay-updated {
   font-size: 1 rem;
   font-style: normal;
   line-height: 2;
+  margin: 2rem auto 0;
 }
 
 input#subscribe-form {
@@ -504,6 +504,10 @@ i {
   .signup-wrapper {
     font-size: 3 rem;
     padding-right: none;
+  }
+
+  input#signup-form {
+    width: 67%;
   }
 
   .season-date {
@@ -680,12 +684,28 @@ i {
       font-size: 4rem;
     }
 
+    .about {
+      width: 720px;
+      margin: 0 auto;
+      line-height: 2;
+    }
+
     banner.container {
       max-width: 1240px;
     }
 
     img.shopping-cart {
       width: 62px;
+    }
+
+    .signup-wrapper {
+      line-height: 2;
+    }
+
+    .signup-wrapper.container {
+      max-width: 720px;
+      padding: 0 2%;
+      margin: 0 auto;
     }
 
     .banner {
