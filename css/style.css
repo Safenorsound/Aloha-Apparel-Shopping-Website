@@ -485,9 +485,6 @@ i {
 .fa {
   font: normal normal normal 14px/1 'FontAwesome';
   display: inline-block;
-  /* padding-right: 1px; */
-  /* font-size: inherit; */
-  /* text-rendering: auto; */
 }
 
 .network-name {
@@ -519,7 +516,6 @@ i {
     display: flex;
     justify-content: space-between;
     padding: 3rem;
-    /* padding-right: 3rem; */
   }
 
   .mens-category {
@@ -678,6 +674,10 @@ i {
   @media screen and (min-width: 1240px) {
     .carousel-cell {
       width: 25%;
+    }
+
+    p.season-date {
+      font-size: 4rem;
     }
 
     banner.container {
