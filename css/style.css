@@ -385,7 +385,7 @@ p.stay-updated {
 }
 
 input#subscribe-form {
-  width: 50%;
+  width: 100%;
   border: none;
   font-family: 'Raleway', 'sans-serif';
   font-size: 1rem;
